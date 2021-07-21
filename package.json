@@ -7,7 +7,9 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
         "dev": "webpack serve --mode development",
-        "build": "ENV=prod webpack --mode production"
+        "build": "ENV=prod webpack --mode production",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist"
     },
     "repository": {
         "type": "git",
@@ -23,7 +25,7 @@
     "bugs": {
         "url": "https://github.com/tap0212/mastermind-game/issues"
     },
-    "homepage": "https://github.com/tap0212/mastermind-game#readme",
+    "homepage": "http://tap0212.github.io/mastermind-game",
     "dependencies": {
         "@reduxjs/toolkit": "^1.5.1",
         "@types/react": "^17.0.5",

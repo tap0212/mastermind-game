@@ -10,9 +10,9 @@ import { createStructuredSelector } from 'reselect';
 import { connect } from 'react-redux';
 import { compose, Action } from 'redux';
 import { THEME } from '@/styling/colors';
-import Home from '@/containers/Home';
-import NotFoundPage from '@/containers/NotFoundPage';
-import Header from '@/components/Header';
+import Home from '@/Containers/Home';
+import NotFoundPage from '@/Containers/NotFoundPage';
+import Header from '@/Components/Header';
 import './index.css';
 interface StateProps {}
 interface DispatchProps {}

@@ -6,8 +6,8 @@
  */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from '@/containers/App';
-import ErrorBoundary from '@/components/ErrorBoundary';
+import App from '@/Containers/App';
+import ErrorBoundary from '@/Components/ErrorBoundary';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import configureStore from './configureStore';

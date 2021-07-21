@@ -1,5 +1,5 @@
-import ColorPicker from '@/components/ColorPicker/ColorPicker';
-import GameBoardRow from '@/components/GameBoardRow/GameBoardRow';
+import ColorPicker from '@/Components/ColorPicker/ColorPicker';
+import GameBoardRow from '@/Components/GameBoardRow/GameBoardRow';
 import { HomeCreators } from '@/store/reducers/homeReducer';
 import { makeSelectHome, selectColor, selectGameMap } from '@/store/selectors/homeSelectors';
 import { COLORS } from '@/styling/colors';

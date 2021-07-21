@@ -1,6 +1,9 @@
 # The MasterMind Game
 #### Rules: 
 Try to guess the pattern, in both order and color, within ten turns. After submitting a row, a small black peg is placed for each code peg from the guess which is correct in both color and position. A white peg indicates the existence of a correct color code peg placed in the wrong position. More info on [Wikipedia](https://en.wikipedia.org/wiki/Mastermind_(board_game)).
+![image](https://user-images.githubusercontent.com/40211415/126560224-f064dc4a-604f-4333-ba31-a338204bc3d1.png)
+
+![image](https://user-images.githubusercontent.com/40211415/126560139-c89a2ee1-4be9-4c33-be8a-3fb7157b3e89.png)
 
 
 ## Built with => React Typescript Template ⚛️ 🥷

@@ -40,6 +40,7 @@ export const PinWrapper = styled.div`
     ${configureFelx({ direction: 'row', alignItems: 'center', justify: 'center' })};
 `;
 export const CheckBtn = styled(Button)`
+    background-color: ${COLORS.GREEN};
     color: ${COLORS.PRIMARY};
     margin: 0 0.5rem;
 `;

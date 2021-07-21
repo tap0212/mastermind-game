@@ -12,10 +12,22 @@ const Wrapper = styled.div`
     background-color: ${COLORS.PRIMARY};
     ${configureFelx({ direction: 'row', alignItems: 'center', justify: 'center' })}
 `;
+const CenterCol = styled.div`
+    ${configureFelx({ direction: 'column', alignItems: 'center', justify: 'center' })}
+`;
 const Header = ({ title }: Props) => {
     return (
         <Wrapper>
-            <h3>{title}</h3>
+            <CenterCol>
+                <h3>{title}</h3>
+                <a
+                    target="_blank"
+                    href="https://github.com/tap0212/mastermind-game"
+                    rel="noreferrer"
+                >
+                    <h5>Github</h5>
+                </a>
+            </CenterCol>
         </Wrapper>
     );
 };

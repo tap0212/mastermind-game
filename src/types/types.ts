@@ -30,3 +30,14 @@ export type ConfigureFlexTypes = {
         | 'space-around'
         | 'space-evenly';
 };
+
+export type ChooseColorPayload = {
+    rowId: number;
+    color: string;
+    columnId: number;
+};
+
+export type SetResultPayload = {
+    rowId: number;
+    results: boolean[];
+};

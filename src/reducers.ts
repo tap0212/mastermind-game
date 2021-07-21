@@ -4,7 +4,10 @@
 
 import { combineReducers, Reducer } from 'redux';
 import App, { appStateType, initialState as AppInitialState } from 'store/reducers/appReducer';
-import home, { homeStateType, initialState as homeInitialState } from './store/reducers/homeReducer';
+import home, {
+    homeStateType,
+    initialState as homeInitialState,
+} from './store/reducers/homeReducer';
 
 export interface ApplicationState {
     App: appStateType;

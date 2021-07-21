@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route, RouteComponentProps } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import { withRouter } from 'react-router';
 import { ThemeProvider } from 'styled-components';
 
@@ -10,9 +10,10 @@ import { createStructuredSelector } from 'reselect';
 import { connect } from 'react-redux';
 import { compose, Action } from 'redux';
 import { THEME } from '@/styling/colors';
-import Home from '@/Containers/Home';
-import NotFoundPage from '@/Containers/NotFoundPage';
-import Header from '@/Components/Header';
+import Home from '@/containers/Home';
+import NotFoundPage from '@/containers/NotFoundPage';
+import Header from '@/components/Header';
+import './index.css';
 interface StateProps {}
 interface DispatchProps {}
 type Props = StateProps & DispatchProps;
@@ -21,7 +22,7 @@ const App: React.FC = (props: Props) => {
     return (
         <ThemeProvider theme={THEME}>
             <Layout.Content>
-                <Header title="The TypeScript React Template" />
+                <Header title="The Mastermind Game" />
                 <Switch>
                     <Route exact={true} path={'/'} component={Home} />
                     <Route path="*" exact={true} component={NotFoundPage} />

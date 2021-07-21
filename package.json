@@ -1,0 +1,79 @@
+{
+    "name": "react-typescript-template",
+    "version": "1.0.0",
+    "description": "A react typescript template to kickstart your react project",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+        "dev": "webpack serve --mode development",
+        "build": "webpack --mode production"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tap0212/react-typescript-template.git"
+    },
+    "keywords": [
+        "react",
+        "typescript",
+        "redux"
+    ],
+    "author": "tap0212 (https://github.com/tap0212)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/tap0212/react-typescript-template/issues"
+    },
+    "homepage": "https://github.com/tap0212/react-typescript-template#readme",
+    "dependencies": {
+        "@reduxjs/toolkit": "^1.5.1",
+        "@types/react": "^17.0.5",
+        "@types/react-dom": "^17.0.5",
+        "antd": "^4.15.5",
+        "connected-react-router": "^6.9.1",
+        "husky": "^6.0.0",
+        "immer": "^9.0.2",
+        "lodash": "^4.17.21",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-redux": "^7.2.4",
+        "react-router": "^5.2.0",
+        "react-router-dom": "^5.2.0",
+        "react-router-redux": "^4.0.8",
+        "redux": "^4.1.0",
+        "redux-devtools-extension": "^2.13.9",
+        "reduxsauce": "^1.2.0",
+        "reselect": "^4.0.0",
+        "styled-components": "^5.3.0",
+        "typescript": "^4.2.4"
+    },
+    "devDependencies": {
+        "@types/lodash": "^4.14.169",
+        "@types/react-router": "^5.1.14",
+        "@types/react-router-dom": "^5.1.7",
+        "@types/react-router-redux": "^5.0.18",
+        "@types/styled-components": "^5.1.9",
+        "@typescript-eslint/eslint-plugin": "^4.23.0",
+        "@typescript-eslint/parser": "^4.23.0",
+        "eslint": "^7.26.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-prettier": "^3.4.0",
+        "eslint-plugin-react": "^7.23.2",
+        "html-webpack-plugin": "^5.3.1",
+        "prettier": "^2.3.0",
+        "ts-loader": "^9.1.2",
+        "tsconfig-paths-webpack-plugin": "^3.5.1",
+        "webpack": "^5.37.0",
+        "webpack-cli": "^4.7.0",
+        "webpack-dev-server": "^3.11.2"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{js,ts,tsx}": [
+            "eslint --fix"
+        ]
+    }
+}

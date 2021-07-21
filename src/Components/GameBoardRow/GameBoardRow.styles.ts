@@ -15,7 +15,6 @@ export const Circle = styled.div`
 export const Wrapper = styled.div`
     margin: 1rem 0;
     padding: 0.5rem;
-    border: 1px solid black;
     ${configureFelx({ direction: 'row', alignItems: 'center', justify: 'center' })};
 `;
 export const ScoreBox = styled.div`

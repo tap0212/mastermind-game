@@ -33,18 +33,19 @@ const GameBoardRow = ({
         checkResult(rowId);
     };
     const handleClickOnCircle = (c: string, i: number) => {
+        const isRowEnable = isRowEnabled(rowId)
         if (!selectedColor) {
             message.info('Please select a color to fill first!');
         }
-        if (!isRowEnabled(rowId)) {
+        if (!isRowEnable) {
             message.info('Please choose in sequence');
         }
-        if (isRowEnabled(rowId) && selectedColor && c === DEFAULT_PLACEHOLDER_COLOR) {
+        if (isRowEnable && selectedColor && c === DEFAULT_PLACEHOLDER_COLOR) {
             submitColor(rowId, selectedColor, i);
         }
     };
     return (
-        <Wrapper>
+        <Wrapper style={isRowEnabled(rowId) ? {border: '1px solid black'} : {border: 0}}>
             <PinWrapper>
                 {colors.map((c, i) => (
                     <Circle

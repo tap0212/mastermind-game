@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { configureFelx } from '@/styling/styles';
 import { COLORS } from '@/styling/colors';
+import { Button } from 'antd';
 
 export const Circle = styled.div`
     width: 2rem;
@@ -38,13 +39,7 @@ export const PinWrapper = styled.div`
     padding: 0.5rem;
     ${configureFelx({ direction: 'row', alignItems: 'center', justify: 'center' })};
 `;
-export const CheckBtn = styled.button`
-    background-color: ${COLORS.GREEN};
+export const CheckBtn = styled(Button)`
     color: ${COLORS.PRIMARY};
-    border: none;
     margin: 0 0.5rem;
-    &:focus {
-        outline: none;
-    }
-    cursor: pointer;
 `;

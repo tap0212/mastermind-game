@@ -61,9 +61,14 @@ const GameBoardRow = ({
                     <Dot key={i} color={resultChecked && s ? COLORS.BLACK : COLORS.PRIMARY} />
                 ))}
             </ScoreBox>
-            {showCheck && !resultChecked && (
-                <CheckBtn onClick={handleOnClickCheckResult}>Check</CheckBtn>
-            )}
+
+            <CheckBtn
+                color={COLORS.GREEN}
+                disabled={!(showCheck && !resultChecked)}
+                onClick={handleOnClickCheckResult}
+            >
+                Check
+            </CheckBtn>
         </Wrapper>
     );
 };
